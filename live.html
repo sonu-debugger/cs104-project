@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Howzatt! Cricket Scorekeeper - Live Match</title>
+    <link rel="stylesheet" href="base_styles.css">
+    <link rel="stylesheet" href="live.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Howzatt! Cricket Scorekeeper</h1>
+        
+        <div class="match-info">
+            <div class="match-status" id="matchStatus">
+                <!-- Match status will be populated by JavaScript -->
+            </div>
+            <div class="innings-info" id="inningsInfo">
+                <!-- Innings info will be populated by JavaScript -->
+            </div>
+        </div>
+        
+        <div class="scoreboard">
+            <div class="batting-section">
+                <h2>Batting</h2>
+                <table class="batting-table">
+                    <thead>
+                        <tr>
+                            <th>Batter</th>
+                            <th>Runs</th>
+                            <th>Balls</th>
+                            <th>4s</th>
+                            <th>6s</th>
+                            <th>SR</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr id="striker">
+                            <td id="strikerName">Striker</td>
+                            <td id="strikerRuns">0</td>
+                            <td id="strikerBalls">0</td>
+                            <td id="striker4s">0</td>
+                            <td id="striker6s">0</td>
+                            <td id="strikerSR">0.00</td>
+                        </tr>
+                        <tr id="nonStriker">
+                            <td id="nonStrikerName">Non-striker</td>
+                            <td id="nonStrikerRuns">0</td>
+                            <td id="nonStrikerBalls">0</td>
+                            <td id="nonStriker4s">0</td>
+                            <td id="nonStriker6s">0</td>
+                            <td id="nonStrikerSR">0.00</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <div class="bowling-section">
+                <h2>Bowling</h2>
+                <table class="bowling-table">
+                    <thead>
+                        <tr>
+                            <th>Bowler</th>
+                            <th>O</th>
+                            <th>M</th>
+                            <th>R</th>
+                            <th>W</th>
+                            <th>Econ</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr id="currentBowler">
+                            <td id="bowlerName">Bowler</td>
+                            <td id="bowlerOvers">0.0</td>
+                            <td id="bowlerMaidens">0</td>
+                            <td id="bowlerRuns">0</td>
+                            <td id="bowlerWickets">0</td>
+                            <td id="bowlerEconomy">0.00</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <div class="run-rates" id="runRates">
+                <!-- Run rates will be populated by JavaScript -->
+            </div>
+        </div>
+        
+        <div class="scoring-actions">
+            <h2>Scoring</h2>
+            <div class="run-buttons">
+                <button class="run-btn" data-runs="0">0</button>
+                <button class="run-btn" data-runs="1">1</button>
+                <button class="run-btn" data-runs="2">2</button>
+                <button class="run-btn" data-runs="3">3</button>
+                <button class="run-btn" data-runs="4">4</button>
+                <button class="run-btn" data-runs="6">6</button>
+                <button id="wicketBtn">Wicket</button>
+            </div>
+            
+            <div class="navigation-buttons">
+                <button id="viewScorecardBtn">View Scorecard</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="score.js"></script>
+</body>
+</html>

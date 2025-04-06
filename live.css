@@ -1,0 +1,87 @@
+.match-info {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+.match-status {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.innings-info {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+.scoreboard {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+.batting-section, .bowling-section {
+    margin-bottom: 20px;
+}
+
+.batting-table, .bowling-table {
+    width: 100%;
+}
+
+#striker {
+    background-color: #ffffcc; /* Highlight the striker */
+}
+
+.run-rates {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #f2f2f2;
+    border-radius: 4px;
+}
+
+.scoring-actions {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.run-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.run-btn {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    font-size: 1.2rem;
+    border-radius: 50%;
+}
+
+#wicketBtn {
+    background-color: #d9534f;
+    width: auto;
+    border-radius: 4px;
+}
+
+.navigation-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#viewScorecardBtn {
+    padding: 10px 20px;
+}

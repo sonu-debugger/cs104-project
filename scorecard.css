@@ -1,0 +1,44 @@
+.navigation-buttons {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.match-info {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.innings-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+}
+
+.batting-scorecard, .bowling-scorecard {
+    margin-bottom: 20px;
+}
+
+tfoot {
+    font-weight: bold;
+    background-color: #f0f0f0;
+}
+
+.not-out {
+    font-style: italic;
+    color: green;
+}
+
+.out {
+    color: #d9534f;
+}
+
+#innings2Container {
+    display: none; /* Hide initially, will be shown via JS when needed */
+}

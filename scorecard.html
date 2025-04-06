@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Howzatt! Cricket Scorekeeper - Scorecard</title>
+    <link rel="stylesheet" href="base_styles.css">
+    <link rel="stylesheet" href="scorecard.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Howzatt! Cricket Scorekeeper</h1>
+        
+        <div class="navigation-buttons">
+            <button id="backToLiveBtn">Back to Live Scoring</button>
+        </div>
+        
+        <div class="match-info" id="matchInfo">
+            <!-- Match info will be populated by JavaScript -->
+        </div>
+        
+        <div class="innings-container" id="innings1Container">
+            <h2 id="team1Name">Team 1 Innings</h2>
+            
+            <div class="batting-scorecard">
+                <h3>Batting</h3>
+                <table id="team1BattingTable">
+                    <thead>
+                        <tr>
+                            <th>Batter</th>
+                            <th>Status</th>
+                            <th>Runs</th>
+                            <th>Balls</th>
+                            <th>4s</th>
+                            <th>6s</th>
+                            <th>SR</th>
+                        </tr>
+                    </thead>
+                    <tbody id="team1BattingBody">
+                        <!-- Will be populated by JavaScript -->
+                    </tbody>
+                    <tfoot id="team1BattingFooter">
+                        <!-- Will be populated by JavaScript -->
+                    </tfoot>
+                </table>
+            </div>
+            
+            <div class="bowling-scorecard">
+                <h3>Bowling</h3>
+                <table id="team1BowlingTable">
+                    <thead>
+                        <tr>
+                            <th>Bowler</th>
+                            <th>O</th>
+                            <th>M</th>
+                            <th>R</th>
+                            <th>W</th>
+                            <th>Econ</th>
+                        </tr>
+                    </thead>
+                    <tbody id="team1BowlingBody">
+                        <!-- Will be populated by JavaScript -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        
+        <div class="innings-container" id="innings2Container">
+            <h2 id="team2Name">Team 2 Innings</h2>
+            
+            <div class="batting-scorecard">
+                <h3>Batting</h3>
+                <table id="team2BattingTable">
+                    <thead>
+                        <tr>
+                            <th>Batter</th>
+                            <th>Status</th>
+                            <th>Runs</th>
+                            <th>Balls</th>
+                            <th>4s</th>
+                            <th>6s</th>
+                            <th>SR</th>
+                        </tr>
+                    </thead>
+                    <tbody id="team2BattingBody">
+                        <!-- Will be populated by JavaScript -->
+                    </tbody>
+                    <tfoot id="team2BattingFooter">
+                        <!-- Will be populated by JavaScript -->
+                    </tfoot>
+                </table>
+            </div>
+            
+            <div class="bowling-scorecard">
+                <h3>Bowling</h3>
+                <table id="team2BowlingTable">
+                    <thead>
+                        <tr>
+                            <th>Bowler</th>
+                            <th>O</th>
+                            <th>M</th>
+                            <th>R</th>
+                            <th>W</th>
+                            <th>Econ</th>
+                        </tr>
+                    </thead>
+                    <tbody id="team2BowlingBody">
+                        <!-- Will be populated by JavaScript -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="score.js"></script>
+</body>
+</html>

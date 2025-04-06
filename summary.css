@@ -1,0 +1,75 @@
+.summary-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.match-details {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+.result-container {
+    margin-bottom: 30px;
+}
+
+.result {
+    font-size: 1.8rem;
+    text-align: center;
+    padding: 20px;
+    background-color: #003366;
+    color: white;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.innings-summary {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.innings {
+    width: 48%;
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.innings h4 {
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #ddd;
+}
+
+.innings-detail {
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navigation-buttons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#newMatchBtn {
+    padding: 12px 25px;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .innings {
+        width: 100%;
+    }
+}

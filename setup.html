@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Howzatt! Cricket Scorekeeper - Setup</title>
+    <link rel="stylesheet" href="base_styles.css">
+    <link rel="stylesheet" href="setup.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Howzatt! Cricket Scorekeeper</h1>
+        
+        <div class="setup-form">
+            <h2>Match Setup</h2>
+            
+            <div class="form-group">
+                <label for="team1">Team 1 Name:</label>
+                <input type="text" id="team1" required placeholder="e.g. CSK">
+            </div>
+            
+            <div class="form-group">
+                <label for="team2">Team 2 Name:</label>
+                <input type="text" id="team2" required placeholder="e.g. RCB">
+            </div>
+            
+            <div class="form-group">
+                <label for="tossWinner">Toss Winner:</label>
+                <select id="tossWinner" required>
+                    <option value="">Select Team</option>
+                    <option value="team1">Team 1</option>
+                    <option value="team2">Team 2</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="tossDecision">Toss Decision:</label>
+                <select id="tossDecision" required>
+                    <option value="">Select Decision</option>
+                    <option value="bat">Bat</option>
+                    <option value="bowl">Bowl</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label>Number of Overs: 2 (Fixed)</label>
+            </div>
+            
+            <button id="startMatchBtn" class="btn-primary">Start Match</button>
+        </div>
+    </div>
+
+    <script src="score.js"></script>
+</body>
+</html>
